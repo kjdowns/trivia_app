@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   root 'sessions#home'
 
+  #Users routes
+  resources :users, only: [:new, :create, :edit, :update, :show, :destroy]
+
 end
